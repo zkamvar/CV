@@ -1,0 +1,113 @@
+Zhian N. Kamvar
+245 S. 15th St.
+Philomath, OR, 97370
+kamvarz@science.oregonstate.edu
+(541) 286-0187
+
+---
+
+EDUCATION
+Ph.D., Botany and Plant Pathology, expected 2017
+Oregon State University, Corvallis, OR
+
+Bachelor of Science, Biology
+Truman State University, Kirksville, MO, December 2007
+Minor: Chemistry
+
+---
+
+TECHNICAL SKILLS
+Computer Languages: R - proficient, Perl - familiar, Python - familiar,
+BASH - familiar, C - used in the past
+Lab Skills: Sterile technique, DNA extraction, PCR amplification.
+
+---
+
+SELECTED EXPERIENCE
+
+Graduate Research Assistant
+Mar 2012 to Present
+Grünwald Lab, OSU, Corvallis, OR
+
+• Designed and executed simulation analyses for populations of partially clonal
+diploids.
+• Authored an R package for genetic analysis of populations with mixed
+(sexual/clonal) reproduction. (http://cran.r-project.org/package=poppr)
+• Isolated and maintained cultures of Phytophthora syringae.
+• Research Advisor: Dr. Niklaus J. Gr ̈nwald
+
+Graduate Teaching Assistant
+Jan 2012 to Mar 2012
+Biology Department, OSU, Corvallis, OR
+• Appointed as a teaching assistant for an undergraduate intro biology course for
+science majors.
+• Developed introductory presentations and quizzes for labs.
+• Proctored all tests and quizzes.
+• Graded assignments and provided students with timely feedback.
+• Held office hours once a week.
+
+Graduate Research Assistant
+Aug 2011 to Dec 2011
+Jaiswal Lab, OSU, Corvallis, OR
+• Engaged in various research projects combining bioinformatic-based text mining
+of databases, wet lab, and greenhouse work.
+• Research Advisor: Dr. Pankaj Jaiswal
+
+Undergraduate Research Assistant
+May 2006 to Dec 2007
+Biology Discipline, Truman State University
+• As part of a team of undergraduate students, contributed to the annotation of
+over 2,000 maize genes determined by microarray hybridization analysis to be
+involved in maize shoot apical meristem function and leaf primordial formation.
+• Became proficient in performing and interpreting BLAST and InterProScan
+searches on sequences, identifying and assessing pertinent primary literature,
+and using a variety of databases to determine the putative function of maize
+genes.
+• Collaborated with other researchers on the same project.
+• Research mentors: Drs. Brent Buckner and Diane Janick-Buckner.
+
+---
+
+SELECTED PRESENTATIONS / PUBLICATIONS
+
+Poster, Fungal Genetics Conference
+Mar 12-17, 2013
+Asilomar, CA
+• “Poppr: An R package for genetic analysis of populations with mixed
+(clonal/sexual) reproduction.”
+
+Talk, 26th Annual Biology Graduate Student Symposium
+Mar 2, 2013
+Hatfield Marine Science Center, Newport, OR
+• “Poppr: An R package for genetic analysis of populations with mixed
+(clonal/sexual) reproduction.”
+
+Buckner B, Beck J, Browning, K, Hoxha E, Grantham L, *Kamvar Z*, Lough A,
+Nikolova O, and Schnable PS, Scanlon MJ, and Janick-Buckner D. 2007 Involving
+undergraduates in the annotation and analysis of global gene expression studies:
+creation of a maize shoot apical meristem expression database. Genetics 176: 741-
+747
+
+Poster, Maize Genetics Conference
+Mar 22-25, 2007
+St. Charles, IL
+• “Annotation and Analysis of Global Gene Expression Studies: Creation of a
+Maize Shoot Apical Meristem Expression Database”
+
+---
+
+EXTRA-CURRICULAR ACTIVITIES
+
+Treasurer
+Sep 2012 to Present
+Botany and Plant Pathology Graduate Student Association, OSU
+
+Radio Co-host
+Jan 2012 to Present
+Inspiration Dissemination, 88.7FM, KBVR Corvallis
+• Scientific discussion and outreach
+
+Active member
+Bioinformatics Users Group, OSU
+Sep 2012 to Present
+
