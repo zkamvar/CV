@@ -135,10 +135,10 @@
 %    pdfproducer   = {\LaTeX{}},% will/should be set automatically to the correct TeX engine used
     bookmarksopen = true,
     bookmarksdepth= 2,% to show sections and subsections
-    pdfauthor     = {\@firstname{}~\@familyname{}},
-    pdftitle      = {\@firstname{}~\@familyname{} -- \@title{}},
-    pdfsubject    = {Resum\'{e} of \@firstname{}~\@familyname{}},
-    pdfkeywords   = {\@firstname{}~\@familyname{}, curriculum vit\ae{}, resum\'{e}}}}
+    pdfauthor     = {\@firstname{}~\@middlename{}~\@familyname{}},
+    pdftitle      = {\@firstname{}~\@middlename{}~\@familyname{} -- \@title{}},
+    pdfsubject    = {Resum\'{e} of \@firstname{}~\@middlename{}~\@familyname{}},
+    pdfkeywords   = {\@firstname{}~\@middlename{}~\@familyname{}, curriculum vit\ae{}, resum\'{e}}}}
 
 % graphics
 \RequirePackage{graphicx}
@@ -209,6 +209,7 @@
 %-------------------------------------------------------------------------------
 % elements
 \newcommand*{\firstname}[1]{\def\@firstname{#1}}
+\newcommand*{\middlename}[1]{\def\@middlename{#1}}
 \newcommand*{\familyname}[1]{\def\@familyname{#1}}
 \renewcommand*{\title}[1]{\def\@title{#1}}
 \newcommand*{\address}[2]{\def\@addressstreet{#1}\def\@addresscity{#2}}
