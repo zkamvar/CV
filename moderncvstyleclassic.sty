@@ -140,7 +140,7 @@
     {\setlength{\makecvtitlenamewidth}{\textwidth-\makecvtitledetailswidth-\makecvtitlepicturewidth}}%
     {}%
   \begin{minipage}[b]{\makecvtitlenamewidth}%
-    \namestyle{\@firstname\ \@familyname}%
+    \namestyle{\@firstname\ \@middlename\ \@familyname}%
     \ifthenelse{\equal{\@title}{}}{}{\\[1.25em]\titlestyle{\@title}}%
   \end{minipage}%
   \hfill%
@@ -161,9 +161,9 @@
   \par\addvspace{2.5ex}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{section}{#1}%
-  \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.95ex}}}%
-  \hspace{\separatorcolumnwidth}%
-  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#1}}%
+  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{\textsc{#1}}}%
+  %\hspace{\separatorcolumnwidth}%
+  %\parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.95ex}}}%
   \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
 
 \renewcommand*{\subsection}[1]{%

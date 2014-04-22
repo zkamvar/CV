@@ -25,14 +25,17 @@
 
 \documentclass[11pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
+\usepackage{natbib}
+\usepackage{bibentry}
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand{\bibverse}[1]{\begin{verse} \bibentry{#1}. \end{verse} }
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -72,9 +75,7 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
-
-\subsection{Research}
+\section{Research}
 
 \cventry{2012--Present}{Graduate Research Assistant}{Gr\"unwald Lab}{Corvallis}{OR}{
 	Utilizing population genomic tools to analyze patterns of differentiation in populations of the plant pathogen \textit{Phytophthora syringae} in Oregon Nurseries.
@@ -88,7 +89,7 @@
 	\end{itemize}
 }
 
-\cventry{Fall/Winter 2011}{Graduate Research Assistant}{Jaiswal Lab}{Corvallis}{OR}{
+\cventry{Aug-Dec 2011}{Graduate Research Assistant}{Jaiswal Lab}{Corvallis}{OR}{
 	Engaged in various research projects combining bioinformatic-based text minining of databases, wet lab, and greenhouse work. \textbf{Research Advisor: Dr. Pankaj Jaiswal}	
 }
 
@@ -102,9 +103,11 @@
 		\item \textbf{Research Mentors: Drs. Brent Buckner and Diane Janick-Buckner}
 	\end{itemize}
 }
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-\subsection{Teaching}
+\section{Teaching}
 
 \cventry{Spring 2012}{Graduate Teaching Assistant}{Biology Dept.}{OSU}{Corvallis, OR}{
 	Appointed as teaching assistant for undergradutate intro biology course for science majors.
@@ -150,76 +153,10 @@
 	\end{itemize}
 }
 
-%------------------------------------------------
-\subsection{Radio}
-
-\cventry{Summer 2005}{Summer Station Manager}{KTRM FM}{Truman State University}{Kirksville, MO}{
-	I was the primary authority on personnel decisions, after input from team members. I organized the weekly schedule of DJs, determined the salaries of station directorys and balanced a budget.
-}
-
-\cventry{2004--2007}{Radio Announcer}{KTRM FM}{Truman State University}{Kirksville, MO}{
-	I ensured successful operation of the transmitter, covered extra scheduled shifts to ensure KTRM stayed on air, and selected appropriate playlists for listeners.
-}
 %----------------------------------------------------------------------------------------
-%	AWARDS SECTION
+%	OUTREACH SECTION
 %----------------------------------------------------------------------------------------
-
-\section{Awards}
-
-\cvitem{2014}{Most Innovative Program -- Intercollegiate Broadcasting System}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Computer skills}
-
-\cvitem{Basic}{\textsc{bash}, Inkscape}
-\cvitem{Intermediate}{\textsc{python}, \textsc{perl}, \textsc{C}, \LaTeX, OpenOffice, Linux, OSX}
-\cvitem{Advanced}{\textsc{R}}
-
-\section{Lab Skills}
-\cvitem{}{Sterile Technique, DNA extraction, GBS library prep}
-
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Presentations}
-
-\subsection{Talks}
-
-\cventry{2013/11/21}{Ph.D. Proposal Seminar}{Department of Botany and Plant Pathology}{Oregon State University}{Corvallis, OR}{Determination of pattern and process in the evolution of the plant pathogen \textit{Phytophthora syringae}}
-
-\cventry{2013/03/02}{Conference Presentation}{Biology Graduate Student Symposium}{Hatfield Marine Science Center}{Newport, OR}{\textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction}
-
-\subsection{Posters}
-
-\cventry{2013/03/12-17}{Fungal Genetics Conference}{Genetics Society of America}{Asilomar}{CA}{
-	\textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction 
-}
-
-\cventry{2012/09/21}{OSU Fall CGRB Conference}{Oregon State University}{Corvallis}{OR}{
-	Poppr: An R package for popualtion genetic analysis
-}
-
-\cventry{2007/04/03}{TSU Student Research Conference}{Truman State University}{Kirksville}{MO}{
-	Annotation and Analysis of Global Gene Expression Studies: Creation of a Maize Shoot Apical Meristem Expression Database
-}
-
-\cventry{2007/03/22-25}{Maize Genetics Conference}{}{St. Charles}{IL}{
-	Annotation and Analysis of Global Gene Expression Studies: Creation of a Maize Shoot Apical Meristem Expression Database
-}
-%----------------------------------------------------------------------------------------
-%	LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Languages}
-
-\cvitemwithcomment{English}{Mothertongue}{}
-\cvitemwithcomment{Korean}{Intermediate}{Can manage basic conversation}
-
-\section{Extracurricular}
+\section{Outreach and Service}
 
 \cventry{2012--Present}{Radio Co-host}{Inspiration Dissemination}{KBVR}{Corvallis}{Co-created, produced, and hosted a weekly radio show interviewing graudate students in STEM fields about their research and experiences in graudate school.
 \newline{}\newline{}
@@ -231,33 +168,133 @@ Details:
 \end{itemize}
 }
 
+\cventry{2012--Present}{Active Contributor}{Bioinformatics Users Group}{Oregon State University}{}{
+	Contributed presentations and discussions relevant to use of bioinformatics tools.
+}
+
+\cventry{2004--2007}{Radio Announcer}{KTRM FM}{Truman State University}{Kirksville, MO}{
+	I ensured successful operation of the transmitter, covered extra scheduled shifts to ensure KTRM stayed on air, and selected appropriate playlists for listeners.
+}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP SECTION
+%----------------------------------------------------------------------------------------
+\section{Leadership}
+
 \cventry{2012--Present}{Treasurer}{Graduate Student Assosication}{Department of Botany and Plant Pathology}{Oregon State University}{
 	Blanced the budget, served on bi-annual travel awards committee, helped organize and coordinate group social functions.
 }
 
-\cventry{2012--Present}{Active Contributor}{Bioinformatics Users Group}{Oregon State University}{}{
-	Contributed presentations and discussions relevant to use of bioinformatics tools.
+\cventry{Summer 2005}{Summer Station Manager}{KTRM FM}{Truman State University}{Kirksville, MO}{
+	I was the primary authority on personnel decisions, after input from team members. I organized the weekly schedule of DJs, determined the salaries of station directorys and balanced a budget.
 }
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2014}{Most Innovative Program -- Intercollegiate Broadcasting System}
+\cvitem{2013}{Seattle Institute For Statistical Genetics Travel Award -- \$450}
+\cvitem{2006}{Truman State University Summer Research Stipend -- \$3000}
+\cvitem{2003}{Truman State University Presidential Leadership Scholarship -- \$2000}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Advanced}{\textsc{R}}
+\cvitem{Intermediate}{\textsc{python}, \textsc{perl}, \textsc{C}, \LaTeX, OpenOffice, Linux, OSX}
+\cvitem{Basic}{\textsc{bash}, Inkscape}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mothertongue}{}
+\cvitemwithcomment{Korean}{Intermediate}{Can manage basic conversation}
+
+
+\section{Presentations}
+
+
+\begin{enumerate}
+	\item \textbf{Kamvar ZN} (2013) Ph.D. Proposal Seminar: Determination of pattern and process in the evolution of the plant pathogen \textit{Phytophthora syringae}. Department of Botany and Plant Pathology, Oregon State University, Corvallis, OR.
+
+	\vspace{6pt}
+
+	\item \textbf{Kamvar ZN} (2013) \textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction. Biology Graduate Student Symposium, Hatfield Marine Science Center, Newport OR.
+
+	\vspace{6pt}
+
+	\item \textbf{Kamvar ZN}, Tabima JF, Gr\"unwald NJ (2013) \textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction. Fungal Genetics Conference, Asilomar, CA.
+
+	\vspace{6pt}
+
+	\item \textbf{Kamvar ZN}, Gr\"unwald NJ (2012) \textit{Poppr}: An R package for popualtion genetic analysis. OSU Fall CGRB Conference, Oregon State University, Corvallis, OR.
+
+	\vspace{6pt}
+
+	\item Browning K, Fritz A, Hoxha E, and \textbf{Kamvar ZN} (2007) Annotation and analysis of global gene expression studies: creation of a maize shoot apical meristem expression database, Maize Genetics Conference, St. Charles, IL.
+
+	\vspace{6pt}
+
+	\item Browning K, Fritz A, Hoxha E, and \textbf{Kamvar ZN} (2007) Annotation and analysis of global gene expression studies: creation of a maize shoot apical meristem expression database, Truman Student Research Conference, Truman State University, Kirksville, MO. 
+\end{enumerate}
+
+% \cventry{2013/11/21}{Ph.D. Proposal Seminar}{Department of Botany and Plant Pathology}{Oregon State University}{Corvallis, OR}{Determination of pattern and process in the evolution of the plant pathogen \textit{Phytophthora syringae}}
+
+% \cventry{2013/03/02}{Conference Presentation}{Biology Graduate Student Symposium}{Hatfield Marine Science Center}{Newport, OR}{\textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction}
+
+% \cventry{2013/03/12-17}{Fungal Genetics Conference}{Genetics Society of America}{Asilomar}{CA}{
+% 	\textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction 
+% }
+
+% \cventry{2012/09/21}{OSU Fall CGRB Conference}{Oregon State University}{Corvallis}{OR}{
+% 	Poppr: An R package for popualtion genetic analysis
+% }
+
+% \cventry{2007/04/03}{TSU Student Research Conference}{Truman State University}{Kirksville}{MO}{
+% 	Annotation and Analysis of Global Gene Expression Studies: Creation of a Maize Shoot Apical Meristem Expression Database
+% }
+
+% \cventry{2007/03/22-25}{Maize Genetics Conference}{}{St. Charles}{IL}{
+% 	Annotation and Analysis of Global Gene Expression Studies: Creation of a Maize Shoot Apical Meristem Expression Database
+% }
+
+
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Publications}
+\section{Peer Reviewed Publications}
 
-\begin{itemize}
+\begin{enumerate}
 
     \item \textbf{Kamvar ZN}, Tabima JF, Gr\"unwald NJ. (2014) \textit{Poppr}: an
 	R package for genetic analysis of populations with clonal, partially clonal,
 	and/or sexual reproduction. PeerJ \textbf{2}: e281
 	\url{http://dx.doi.org/10.7717/peerj.281}
+	
+	\vspace{6pt}
 
-	\item Buckner B, Beck J, Browning, K, Hoxha E, Grantham L, \textbf{Kamvar Z}, Lough A,
+	\item Buckner B, Beck J, Browning, K, Hoxha E, Grantham L, \textbf{Kamvar ZN}, Lough A,
 	Nikolova O, and Schnable PS, Scanlon MJ, and Janick-Buckner D. (2007) Involving
 	undergraduates in the annotation and analysis of global gene expression studies:
 	creation of a maize shoot apical meristem expression database. \textit{Genetics}
 	\textbf{176}: 741-747
 
-\end{itemize}
+\end{enumerate}
 
 
 %----------------------------------------------------------------------------------------
