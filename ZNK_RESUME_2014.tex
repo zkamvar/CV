@@ -1,0 +1,260 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper,sans]{modernresume} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{resume} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{natbib}
+\usepackage{bibentry}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand{\bibverse}[1]{\begin{verse} \bibentry{#1}. \end{verse} }
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Zhian} % Your first name
+\middlename{N.}
+\familyname{Kamvar} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{245 S. 15th St.}{Philomath, OR 97370}
+\mobile{(541) 286-0187}
+\phone{(541) 738-4074}
+\email{xxxxxxxxxx@science.oregonstate.edu}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2012 -- Present}{Ph. D. Botany and Plant Pathology}{Oregon State University (OSU)}{Corvallis, OR}{}{}  % Arguments not required can be left empty
+\cventry{2007}{Bachelor of Science Biology}{Truman State University (TSU)}{Kirksville, MO}{}{}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Research}
+\cventry{2012--Present}{Graduate Research Assistant}{Gr\"unwald Lab}{OSU, Corvallis}{OR}{
+	Population genomics of the plant pathogen \textit{Phytophthora syringae};
+	\textbf{Research Advisor: Dr. Niklaus Gr\"unwald}. 
+}
+
+\cventry{Aug--Dec 2011}{Graduate Research Assistant}{Jaiswal Lab}{OSU, Corvallis}{OR}{
+	Annotation of flowering pathway of \textit{Arabidopsis}. \textbf{Research Advisor: Dr. Pankaj Jaiswal}	
+}
+
+\cventry{2006--2007}{Undergraduate Research Assistant}{Biology Discipline}{TSU}{Kirksville, MO}{
+	Annotation of maize shoot apical meristem expressed genes. \textbf{Research Mentors: Drs. Brent Buckner and Diane Janick-Buckner}
+}
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching}
+
+\cventry{Spring 2012}{Graduate Teaching Assistant}{Biology Dept.}{OSU}{Corvallis, OR}{}
+
+\cventry{2009--2011}{English Instructor}{Herald NIE}{Joong-Dong}{Daegu, South Korea}{}
+
+\cventry{2008--2009}{English Instructor}{GnB English}{Sangin-2-Dong}{Daegu, South Korea}{}
+
+\cventry{Fall Semester, 2006/07}{Undergraduate Teaching Assistant}{Biology Discipline}{TSU}{Kirksville, MO}{}
+
+%----------------------------------------------------------------------------------------
+%	OUTREACH SECTION
+%----------------------------------------------------------------------------------------
+\section{Outreach and Service}
+
+\cventry{2012--Present}{Radio Co-host}{Inspiration Dissemination}{KBVR}{Corvallis}{
+	Weekly show focused on communicating graduate student research.
+}
+
+\cventry{2012--Present}{Active Contributor}{Bioinformatics Users Group}{Oregon State University}{}{
+	Contributed presentations and discussions relevant to use of bioinformatics tools.
+}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP SECTION
+%----------------------------------------------------------------------------------------
+\section{Leadership}
+
+\cventry{2012--Present}{Treasurer}{Graduate Student Association}{Department of Botany and Plant Pathology}{Oregon State University}{}
+
+\cventry{Summer 2005}{Summer Station Manager}{KTRM FM}{Truman State University}{Kirksville, MO}{}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2014}{Most Innovative Program -- Intercollegiate Broadcasting System}
+\cvitem{2013}{Seattle Institute For Statistical Genetics Travel Award -- \$450}
+\cvitem{2006}{Truman State University Summer Research Stipend -- \$3000}
+\cvitem{2003}{Truman State University Presidential Leadership Scholarship -- \$2000}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Advanced}{\textsc{R}}
+\cvitem{Intermediate}{\textsc{python}, \textsc{perl}, \textsc{C}, \LaTeX, OpenOffice, Linux, OSX}
+\cvitem{Basic}{\textsc{bash}, Inkscape}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mother tongue}{}
+\cvitemwithcomment{Korean}{Intermediate}{Can manage basic conversation}
+
+
+
+\section{Peer Reviewed Publications}
+
+\begin{enumerate}
+
+    \item \textbf{Kamvar ZN}, Tabima JF, Gr\"unwald NJ. (2014) \textit{Poppr}: an
+	R package for genetic analysis of populations with clonal, partially clonal,
+	and/or sexual reproduction. PeerJ \textbf{2}: e281
+	\url{http://dx.doi.org/10.7717/peerj.281}
+
+	\item Buckner B, Beck J, Browning, K, Hoxha E, Grantham L, \textbf{Kamvar ZN}, Lough A,
+	Nikolova O, and Schnable PS, Scanlon MJ, and Janick-Buckner D. (2007) Involving
+	undergraduates in the annotation and analysis of global gene expression studies:
+	creation of a maize shoot apical meristem expression database. \textit{Genetics}
+	\textbf{176}: 741-747
+
+\end{enumerate}
+
+
+
+\section{Presentations}
+
+
+\begin{enumerate}
+	\item \textbf{Kamvar ZN} (2013) Ph.D. Proposal Seminar: Determination of pattern and process in the evolution of the plant pathogen \textit{Phytophthora syringae}. Department of Botany and Plant Pathology, Oregon State University, Corvallis, OR.
+
+	\vspace{6pt}
+
+	\item \textbf{Kamvar ZN} (2013) \textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction. Biology Graduate Student Symposium, Hatfield Marine Science Center, Newport OR.
+
+	\vspace{6pt}
+
+	\item \textbf{Kamvar ZN}, Tabima JF, Gr\"unwald NJ (2013) \textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction. Fungal Genetics Conference, Asilomar, CA.
+
+	\vspace{6pt}
+
+	\item \textbf{Kamvar ZN}, Gr\"unwald NJ (2012) \textit{Poppr}: An R package for popualtion genetic analysis. OSU Fall CGRB Conference, Oregon State University, Corvallis, OR.
+
+	\vspace{6pt}
+
+	\item Browning K, Fritz A, Hoxha E, and \textbf{Kamvar ZN} (2007) Annotation and analysis of global gene expression studies: creation of a maize shoot apical meristem expression database, Maize Genetics Conference, St. Charles, IL.
+
+	\vspace{6pt}
+
+	\item Browning K, Fritz A, Hoxha E, and \textbf{Kamvar ZN} (2007) Annotation and analysis of global gene expression studies: creation of a maize shoot apical meristem expression database, Truman Student Research Conference, Truman State University, Kirksville, MO. 
+\end{enumerate}
+
+% \cventry{2013/11/21}{Ph.D. Proposal Seminar}{Department of Botany and Plant Pathology}{Oregon State University}{Corvallis, OR}{Determination of pattern and process in the evolution of the plant pathogen \textit{Phytophthora syringae}}
+
+% \cventry{2013/03/02}{Conference Presentation}{Biology Graduate Student Symposium}{Hatfield Marine Science Center}{Newport, OR}{\textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction}
+
+% \cventry{2013/03/12-17}{Fungal Genetics Conference}{Genetics Society of America}{Asilomar}{CA}{
+% 	\textit{Poppr}: An R package for genetic analysis of populations with mixed (clonal/sexual) reproduction 
+% }
+
+% \cventry{2012/09/21}{OSU Fall CGRB Conference}{Oregon State University}{Corvallis}{OR}{
+% 	Poppr: An R package for popualtion genetic analysis
+% }
+
+% \cventry{2007/04/03}{TSU Student Research Conference}{Truman State University}{Kirksville}{MO}{
+% 	Annotation and Analysis of Global Gene Expression Studies: Creation of a Maize Shoot Apical Meristem Expression Database
+% }
+
+% \cventry{2007/03/22-25}{Maize Genetics Conference}{}{St. Charles}{IL}{
+% 	Annotation and Analysis of Global Gene Expression Studies: Creation of a Maize Shoot Apical Meristem Expression Database
+% }
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+% \clearpage
+
+% \recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+% \makelettertitle % Print letter title
+
+% \lipsum[1-3] % Dummy text
+
+% \makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
