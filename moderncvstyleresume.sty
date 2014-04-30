@@ -158,13 +158,13 @@
 \settoheight{\baseletterheight}{\sectionstyle{o}}
 \setlength{\baseletterheight}{\baseletterheight-0.95ex}
 \renewcommand*{\section}[1]{%
-  \par\addvspace{2.5ex}%
+  \par\addvspace{1ex}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{section}{#1}%
   \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{\textsc{#1}}}%
   %\hspace{\separatorcolumnwidth}%
   %\parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.95ex}}}%
-  \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
+  \par\nobreak\@afterheading}%\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
 
 \renewcommand*{\subsection}[1]{%
   \par\addvspace{1ex}%
