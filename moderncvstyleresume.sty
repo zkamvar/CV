@@ -141,7 +141,7 @@
     {}%
   \begin{minipage}[b]{\makecvtitlenamewidth}%
     \namestyle{\@firstname\ \@middlename\ \@familyname}%
-    \ifthenelse{\equal{resum\'{e}}{}}{}{\\[0.75em]\titlestyle{}\\[0.5em]}% This makes the Cirriculum Vitae part.
+    \ifthenelse{\equal{\@title}{}}{}{\\[1em]\titlestyle{\@title}}%% This makes the Cirriculum Vitae part.
   \end{minipage}%
   \hfill%
   % detailed information
