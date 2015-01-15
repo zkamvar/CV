@@ -15,7 +15,7 @@ clean:
 	$(RM) *.log *.out *.aux
 
 emlr: 
-	perl -p -i -e "s/xxxxxxxx@/$(EMAI)@/" $(TEX_FILES)
+	perl -p -i -e "s/xxxxxxxxxx@/$(EMAI)@/" $(TEX_FILES)
 
 emlo:
-	perl -p -i -e "s/$(EMAI)@/xxxxxxxx@/" $(TEX_FILES)
+	perl -p -i -e "s/$(EMAI)@/xxxxxxxxxx@/" $(TEX_FILES)
