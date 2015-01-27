@@ -26,7 +26,7 @@
 \documentclass[11pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{enumitem}
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
@@ -37,7 +37,6 @@
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 \newcommand{\bibverse}[1]{\begin{verse} \bibentry{#1}. \end{verse} }
-
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -57,6 +56,9 @@
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
+
+% Uncomment for black and white links
+\AfterPreamble{\hypersetup{colorlinks,urlcolor=black}}
 %----------------------------------------------------------------------------------------
 
 \begin{document}
