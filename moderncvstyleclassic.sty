@@ -262,7 +262,7 @@
   \begin{minipage}{.5\textwidth}%
     \raggedleft%
     \addressfont\textcolor{color2}{%
-      {\bfseries\upshape\@firstname~\@familyname}\@firstdetailselementfalse%
+      {\bfseries\upshape\@firstname~\@middlename~\@familyname}\@firstdetailselementfalse%
       \ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol\@addressstreet%
         \ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\@addresscity}}%
       \ifthenelse{\isundefined{\@mobile}}{}{\makenewline\mobilesymbol\@mobile}%
@@ -295,7 +295,7 @@
 
 \renewcommand*{\makeletterclosing}{
   \@closing\\[3em]%
-  {\bfseries \@firstname~\@familyname}%
+  {\bfseries \@firstname~\@middlename~\@familyname}%
   \ifthenelse{\isundefined{\@enclosure}}{}{%
     \\%
     \vfill%

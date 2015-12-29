@@ -158,7 +158,7 @@
         \centering%
         \addressfont\color{color2}%
         \vspace{-\baselineskip}% to cancel out the extra vertical space taken by the name (below) and ensure perfect alignment of letter and cv footers
-        \strut{\bfseries\upshape\@firstname~\@familyname}\\% the \strut is required to ensure the line is exactly \baselineskip tall
+        \strut{\bfseries\upshape\@firstname~\@middlename~\@familyname}\\% the \strut is required to ensure the line is exactly \baselineskip tall
         \ifthenelse{\isundefined{\@addressstreet}}{}{\addtofooter[]{\addresssymbol\@addressstreet}%
           \ifthenelse{\equal{\@addresscity}{}}{}{\addtofooter[~--~]{\@addresscity}}\flushfooter\@firstfooterelementtrue\\}% if \addresstreet is defined, \addresscity will always be defined but could be empty
         \ifthenelse{\isundefined{\@mobile}}{}{\addtofooter{\mobilesymbol\@mobile}}%
@@ -176,7 +176,7 @@
 
 \renewcommand*{\makeletterclosing}{
   \@closing\\[3em]%
-  {\bfseries\@firstname~\@familyname}%
+  {\bfseries\@firstname~\@middlename~\@familyname}%
   \ifthenelse{\isundefined{\@enclosure}}{}{%
     \\%
     \vfil%

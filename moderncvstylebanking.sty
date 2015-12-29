@@ -88,7 +88,7 @@
   \parbox{\maketitlewidth}{%
     \centering%
     % name and title
-    \namestyle{\@firstname~\@familyname}%
+    \namestyle{\@firstname~\@middlename~\@familyname}%
     \ifthenelse{\isundefined{\@title}}{}{\titlestyle{~|~\@title}}\\%
     % detailed information
     \addressfont\color{color2}%
@@ -285,7 +285,7 @@
 
 \renewcommand*{\makeletterclosing}{
   \@closing\\[3em]%
-  {\bfseries \@firstname~\@familyname}%
+  {\bfseries \@firstname~\@middlename~\@familyname}%
   \ifthenelse{\isundefined{\@enclosure}}{}{%
     \\%
     \vfill%
