@@ -1,41 +1,33 @@
 LATEXMK    = latexmk -xelatex -quiet -r .latexmkrc
 EMAI      := $(shell echo $$[0x4dda3f] | tr 0-9 mavzrketsn)
-FILES     := $(basename $(wildcard *.tex))
-TEX_FILES := $(addsuffix .tex, $(FILES))
+# FILES     := $(basename $(wildcard *.tex))
+# TEX_FILES := $(addsuffix .tex, $(FILES))
 includes  := $(shell ls tex/*.tex) $(shell ls *.tex)
-target     = ZNK_CV
+target    := ZNK_CV ZNK_RESUME_Sci_Fri
+TEX_FILES := $(addsuffix .tex, ${target})
+PDF_FILES := $(addsuffix .pdf, ${target})
 
 .PHONY: ${target}
 ${target}: ${target}.pdf
-#cv: read
-#	pdflatex ZNK_CV; \
-#	pdflatex ZNK_CV;
 
-#resume: read
-#	pdflatex ZNK_RESUME_2014; \
-#	pdflatex ZNK_RESUME_2014
-
-# all: readable $(FILES).pdf hidden
-
-${target}.pdf: ${includes}
+${target}.pdf: readable ${includes}
 	${LATEXMK} ${target}
 
-# clean: hidden
-# 	$(RM) *.log *.out *.aux *.toc *.blg *.bbl *.synctex.gz \
-# 	*.fdb_latexmk *.fls *.pdf
-
 .PHONY: clean
-clean:
-	${RM} $(filter-out %.tex %.pdf %.docx, $(shell ls ${target}.*))
+clean: hidden
+	${RM} $(filter-out %.tex %.pdf %.docx, $(shell ls $(addsuffix .*, ${target})))
 	# The following is occasionally necessary due to a nasty bug in biber.
 	${RM} -r $(shell biber --cache)
 
 .PHONY: cleanall
 cleanall: clean
-	${RM} ${target}.pdf ${target}.docx
+	${RM} ${PDF_FILES}
 
-readable: 
-	perl -p -i -e "s/xxxxxxxxxx@/$(EMAI)@/" $(TEX_FILES)
+readable:
+	perl -p -i -e "s/xxxxxxxxxx@/$(EMAI)@/" ${TEX_FILES}
 
 hidden:
-	perl -p -i -e "s/$(EMAI)@/xxxxxxxxxx@/" $(TEX_FILES)
+	perl -p -i -e "s/$(EMAI)@/xxxxxxxxxx@/" ${TEX_FILES}
+
+wow:
+	echo ${TEX_FILES} ${PDF_FILES}
