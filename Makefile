@@ -2,7 +2,11 @@ LATEXMK    = latexmk -xelatex -quiet -r .latexmkrc
 EMAI      := $(shell echo $$[0x4dda3f] | tr 0-9 mavzrketsn)
 FILES     := $(basename $(wildcard *.tex))
 TEX_FILES := $(addsuffix .tex, $(FILES))
+includes  := $(shell ls tex/*.tex) $(shell ls *.tex)
+target     = ZNK_CV
 
+.PHONY: ${target}
+${target}: ${target}.pdf
 #cv: read
 #	pdflatex ZNK_CV; \
 #	pdflatex ZNK_CV;
@@ -11,10 +15,10 @@ TEX_FILES := $(addsuffix .tex, $(FILES))
 #	pdflatex ZNK_RESUME_2014; \
 #	pdflatex ZNK_RESUME_2014
 
-all: readable $(FILES).pdf hidden
+# all: readable $(FILES).pdf hidden
 
-$(FILES).pdf: $(FILES).tex
-	${LATEXMK} $(FILES)
+${target}.pdf: ${includes}
+	${LATEXMK} ${target}
 
 # clean: hidden
 # 	$(RM) *.log *.out *.aux *.toc *.blg *.bbl *.synctex.gz \
@@ -22,7 +26,7 @@ $(FILES).pdf: $(FILES).tex
 
 .PHONY: clean
 clean:
-	${RM} $(filter-out %.tex %.pdf %.docx, $(shell ls ${target}.*), $(shell ls tex/*.tex))
+	${RM} $(filter-out %.tex %.pdf %.docx, $(shell ls ${target}.*))
 	# The following is occasionally necessary due to a nasty bug in biber.
 	${RM} -r $(shell biber --cache)
 
