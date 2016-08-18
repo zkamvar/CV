@@ -1,7 +1,5 @@
 LATEXMK    = latexmk -xelatex -quiet -r .latexmkrc
 EMAI      := $(shell echo $$[0x4dda3f] | tr 0-9 mavzrketsn)
-# FILES     := $(basename $(wildcard *.tex))
-# TEX_FILES := $(addsuffix .tex, $(FILES))
 includes  := $(shell ls tex/*.tex) $(shell ls *.tex)
 target    := ZNK_CV ZNK_RESUME_Sci_Fri
 TEX_FILES := $(addsuffix .tex, ${target})
