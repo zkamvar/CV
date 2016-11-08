@@ -1,5 +1,5 @@
 LATEXMK    = latexmk -xelatex -quiet -r .latexmkrc
-EMAI      := $(shell echo $$[0x4dda3f] | tr 0-9 mavzrketsn)
+EMAI      := $(shell echo $$[0x358fc6] | tr 0-9 mavzrketsn)
 includes  := $(shell ls tex/*.tex) $(shell ls *.tex)
 target    := ZNK_CV ZNK_RESUME_Sci_Fri
 TEX_FILES := $(addsuffix .tex, ${target})
@@ -9,7 +9,7 @@ PDF_FILES := $(addsuffix .pdf, ${target})
 ${target}: ${target}.pdf
 
 ${target}.pdf: readable ${includes}
-	${LATEXMK} ${target}
+	${LATEXMK} ${target} 
 
 .PHONY: clean
 clean: hidden
