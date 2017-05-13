@@ -1,31 +1,29 @@
-LATEXMK    = latexmk -xelatex -quiet -r .latexmkrc
-EMAI      := $(shell echo $$[0x358fc6] | tr 0-9 mavzrketsn)
-includes  := $(shell ls tex/*.tex) $(shell ls *.tex)
-target    := ZNK_CV ZNK_RESUME_Sci_Fri ZNK_CV_UNL ZNK_RESUME_Mozilla
-TEX_FILES := $(addsuffix .tex, ${target})
-PDF_FILES := $(addsuffix .pdf, ${target})
+EMAI   := $(shell echo $$[0x358fc6] | tr 0-9 mavzrketsn)
+TARGET := ZNK_CV.pdf \
+	ZNK_RESUME_Sci_Fri.pdf \
+	ZNK_CV_UNL.pdf \
+	ZNK_RESUME_Mozilla.pdf
+TEX_FILES := $(patsubst %.pdf, %.tex, $(TARGET))
 
-.PHONY: ${target}
-${target}: ${target}.pdf
+.PHONY : all
+all: readable $(TARGET)
 
-${target}.pdf: readable ${includes}
-	${LATEXMK} ${target} 
+%.pdf: %.tex tex/*
+	latexmk -xelatex -quiet -silent -r .latexmkrc $(<F) $@
 
 .PHONY: clean
 clean: hidden
-	${RM} $(filter-out %.tex %.pdf %.docx, $(shell ls $(addsuffix .*, ${target})))
-	# The following is occasionally necessary due to a nasty bug in biber.
-	${RM} -r $(shell biber --cache)
+	latexmk -c
+	$(RM) -r $(shell biber --cache)
 
-.PHONY: cleanall
+.PHONY : cleanall
 cleanall: clean
-	${RM} ${PDF_FILES}
+	$(RM) $(TARGET)
 
+.PHONY : readable
 readable:
-	perl -p -i -e "s/xxxxxxxxxx@/$(EMAI)@/" ${TEX_FILES}
+	perl -p -i -e "s/xxxxxxxxxx@/$(EMAI)@/" $(TEX_FILES)
 
+.PHONY : hidden
 hidden:
-	perl -p -i -e "s/$(EMAI)@/xxxxxxxxxx@/" ${TEX_FILES}
-
-wow:
-	echo ${TEX_FILES} ${PDF_FILES}
+	perl -p -i -e "s/$(EMAI)@/xxxxxxxxxx@/" $(TEX_FILES)
