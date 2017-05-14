@@ -14,7 +14,7 @@ make
 make clean
 ``` 
 
-The CV is made up of various sections using the `\include{}` tag. These sections
+The CV is made up of various sections using the `\input{}` tag. These sections
 live in the [tex/][1] folder. 
 
 [0]: https://www.ctan.org/pkg/moderncv?lang=en
