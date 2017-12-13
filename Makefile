@@ -1,4 +1,4 @@
-TARGET := ZNK_CV.pdf # \
+TARGET := ZNK_CV.pdf ZNK_CV-yml.pdf # \
 	ZNK_RESUME_Sci_Fri.pdf \
 	ZNK_CV_UNL.pdf \
 	ZNK_RESUME_Mozilla.pdf
@@ -16,6 +16,13 @@ all: $(TARGET)
 # Step 2: The tmp files are fed into latexmk
 %.pdf: %.tmp tex/*
 	latexmk -xelatex -quiet -r .latexmkrc $< $@
+
+%-yml.pdf: %.yaml template.tex
+	sed "s/xxxxxxxxxx@/$(EMAI)@/" $< \
+	| pandoc \
+	  --latex-engine=xelatex \
+	  --template=template.tex \
+	  -o $@
 
 .PHONY: clean
 clean:
