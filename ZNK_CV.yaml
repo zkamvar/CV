@@ -1,0 +1,144 @@
+---
+# Personal details
+name:
+  - first: Zhian
+  - middle: N.
+  - last: Kamvar
+  - email: xxxxxxxxxx@gmail.com
+address:
+  - "5631 Abbey Ct. Apt. 29"
+  - Lincoln, NE 68505
+phone: "(541) 286-0187"
+email: zkamvar@gmail.com
+# Insert URLs without http://
+urls:
+  - zkamvar.github.io
+  - twitter.com/tinynietzsche
+
+# Sections
+
+awards:
+ - year: 2016
+   award: Botany and Plant Pathology Grad. Student Assoc. Travel Award
+   amount: "$200"
+ - year: 2016
+   award: APS Foundation Student Travel Award
+   amount: "$500"
+ - year: 2015
+   award: APS Pacific Division Travel Award
+   amount: "$500"
+ - year: 2015
+   award: OSU Graduate School Travel Award
+   amount: "$500"
+ - year: 2015
+   award: NESCent Travel award for Population Genetics in R Hackathon
+   amount: "$650"
+ - year: 2014
+   award: OSU Botany and Plant Pathology Anita Summers Travel Award
+   amount: "$1000"
+ - year: 2014
+   award: Most Innovative [Radio] Program
+   amount: Intercollegiate Broadcasting System
+ - year: 2013
+   award: Seattle Institute For Statistical Genetics Travel Award
+   amount: "$450"
+ - year: 2006
+   award: Truman State University Summer Research Stipend
+   amount: "$3000"
+ - year: 2003
+   award: Truman State University Presidential Leadership Scholarship
+   amount: "$2000"
+
+software:
+  R:
+    - role: \textbf{Maintainer}
+      url: http://cran.r-project.org/package=poppr
+      name: poppr
+      description: Analysis of populations with mixed reproductive modes
+    - role: Contributor
+      url: http://cran.r-project.org/package=adegenet
+      name: adegenet
+      description: Multivariate analysis of population genetics
+    - role: Contributor
+      url: http://cran.r-project.org/package=mmod
+      name: mmod
+      description: Modern methods of differentiation
+    - role: Contributor
+      url: http://cran.r-project.org/package=heirfstat
+      name: hierfstat
+      description: Estimation of hierarchical F-statistics
+    - role: Contributor
+      url: http://cran.r-project.org/package=vcfR
+      name: vcfR
+      description: Visualization and manipulation of variant call format files
+    - role: Contributor
+      url: http://cran.r-project.org/package=apex
+      name: apex
+      description: Phylogenetic analysis with multiple genes
+    - role: \textbf{Maintainer}
+      url: http://cran.r-project.org/package=popprxl
+      name: popprxl
+      description: Providing data import into poppr from excel spreadsheets
+    - role: \textbf{Maintainer}
+      url: http://cran.r-project.org/package=ezec
+      name: ezec
+      description: An easy interface to effective concentration calculations
+    - role: \textbf{Maintainer}
+      url: https://github.com/zkamvar/beaverdown
+      name: beaverdown
+      description: RMarkdown template for the Oregon State University dissertation
+  Genomics:
+    - role: \textbf{Maintainer}
+      url: https://github.com/zkamvar/read-processing
+      name: read-processing
+      description: Makefile-driven Genome Assembly of \textit{Sclerotinia sclerotiorum} resequencing data
+  Websites:
+    - role: Co-maintainer
+      url: http://popgen.nescent.org
+      name: http://popgen.nescent.org
+      description: Community-driven educational resources
+    - role: Contributor
+      url: http://phytophthora-id.org
+      name: http://phytophthora-id.org
+      description: Web application for identification of clonal lineages of two \textit{Phytophthora} species
+    - role: Contributor
+      url: http://microbe-id.org
+      name: http://microbe-id.org
+      description: Template web application for creating species identification web services
+
+skills:
+- Aesthetics, Ethics, Metaphysics, Nihilism
+- Psychology, Ontology, Poetry, Value theory
+- Voluntarism, Tragedy, Fact–value distinction
+- Anti-foundationalism, Philosophy of history
+
+experience:
+- years: 1879--1889
+  employer: Freiberufler
+  job: Freier Philisoph
+  city: Sils-Maria
+- years: 1869–-1879
+  employer: Universität Basel
+  job: Professor für klassische Philologie
+  city: Basel
+- years: 1867--1868
+  employer: Preußischen Artillerie
+  job: Kanonier
+  city: Naumburg
+
+education:
+- year: 1867
+  subject: Philology
+  institute: Leipzig Universität
+  city: Leipzig
+- year: 1864
+  subject: Abitur
+  institute: Schulpforta
+  city: Naumburg
+
+# Settings
+mainfont: Hoefler Text
+fontsize: 10pt
+lang: English
+geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+---
