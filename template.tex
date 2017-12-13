@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[$fontsize$,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%
+% % LAYOUT
+% %--------------------------------
+% Margins
+\usepackage{geometry}
+\geometry{$geometry$}
+%
+% Do not indent paragraphs
+\setlength\parindent{0in}
+%
+% % Enable multicolumns
+% \usepackage{multicol}
+% \setlength{\columnsep}{-3.5cm}
+
+% Uncomment to suppress page numbers
+% \pagenumbering{gobble}
+%
+% LANGUAGE
+%--------------------------------
+% Set the main language
+$if(lang)$
+\usepackage{polyglossia}
+\setmainlanguage{$lang$}
+$endif$
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
+% Cool ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+
+\usepackage{enumitem}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{natbib}
+\usepackage{bibentry}
+% \usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand{\bibverse}[1]{\begin{verse} \bibentry{#1}. \end{verse} }
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{$name.first$} % Your first name
+\middlename{$name.middle$}
+\familyname{$name.last$} % Your last name
+\email{$name.email$}
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address$for(address)${$address$}$endfor$
+\mobile{$phone$}
+
+
+
+% Uncomment for black and white links
+%\AfterPreamble{\hypersetup{colorlinks,urlcolor=black,linkcolor=black}}
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% If you want a cover letter to go with it. Note that this cover letter will be included
+% in the pagination.
+% \input{./tex/Cover.tex}
+
+% \makecvtitle % Print the CV title
+
+$if(software)$
+\section{Authored Software}
+
+\subsection{R Packages}
+$for(software.R)$
+\cvitemwithcomment{$software.R.role$}{\href{$software.R.url$}{$software.R.name$}}{$software.R.description$}
+$endfor$
+
+\subsection{Genomics}
+$for(software.Genomics)$
+\cvitemwithcomment{$software.Genomics.role$}{\href{$software.Genomics.url$}{$software.Genomics.url$}}{$software.Genomics.description$}
+$endfor$
+
+\subsection{Websites}
+$for(software.Websites)$
+\cvitemwithcomment{$software.Websites.role$}{\href{$software.Websites.url$}{$software.Websites.url$}}{$software.Websites.description$}
+$endfor$
+
+$endif$
+
+$if(awards)$
+\section{Awards}
+$for(awards)$
+\cvitem{$awards.year$}{$awards.award$ -- $awards.amount$}
+$endfor$
+$endif$
+
+
+
+% \section{Education}
+% \input{./tex/Education.tex}
+%
+% \section{Employment}
+% \input{./tex/Research.tex}
+%
+% \section{Computational Experience}
+% \input{./tex/Skills.tex}
+%
+% \section{Authored Software}
+% \input{./tex/Software.tex}
+%
+% \section{Teaching}
+% \input{./tex/Teaching.tex}
+%
+% \section{Spoken Languages}
+% \input{./tex/Languages.tex}
+%
+% \section{Outreach, Service, and Extracurricular Activities}
+% \input{./tex/Outreach.tex}
+%
+% \section{Awards}
+% \input{./tex/Awards.tex}
+%
+% % Sections in files
+% \input{./tex/Pubs.tex}
+
+\end{document}
