@@ -1,5 +1,5 @@
-TARGET := ZNK_CV.pdf # \
-	ZNK_RESUME_Sci_Fri.pdf \
+TARGET := ZNK_CV.pdf  #\
+	ZNK_RESUME_Sci_Fri.pdf #\
 	ZNK_CV_UNL.pdf \
 	ZNK_RESUME_Mozilla.pdf
 TEX_FILES := $(patsubst %.pdf, %.tex, $(TARGET))
