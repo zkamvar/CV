@@ -1,3 +1,10 @@
+MAKEFLAGS += --warn-undefined-variables
+SHELL := bash
+.SHELLFLAGS := -eu -o pipefail -c
+.DEFAULT_GOAL := all
+.DELETE_ON_ERROR:
+.SUFFIXES:
+
 TARGET := ZNK_CV.pdf  #\
 	ZNK_RESUME_Sci_Fri.pdf #\
 	ZNK_CV_UNL.pdf \
