@@ -1,0 +1,64 @@
+Rich FitzJohn [5:36 PM] The first paragraph (always the hardest) feels wasted
+to me, and a little jumbled, with the section in bold jumping out oddly.
+There's also more space here to shine, and you can trim down the header section
+dramatically to get you another paragraph.  We always read the cover letter
+first, then scan CVs for keywords.  You need to make sure you highlight the
+things that we should go digging for.
+
+What matters and is *not* highlighted here in the first paragraph:
+
+* you have experience in diverse fields
+* you have experience coordinating groups of varying technological expertise
+  and experience
+* you have experience managing projects and juggling competing demands and
+  priorities, delegating work (see the "managing the review board" section)
+* you have a passion for testing and have successfully got other people
+  motivated to test software - you might hint at having an appreciation of
+  where current testing derived from traditional software engineering falls short
+  for scientific applications (I'm sure you must) - looking here at the
+  responsibility "Create new testing frameworks for R packages"
+
+In general I think you undersell the *coordination* parts of your R4Epis work,
+and that would sit nicely along side the already strong technical chops that
+you've focussed on in the letter.
+
+Second paragraph is excellent.  This would definitely guarantee a closer read
+of a CV.  You might add a second and 3rd footnote to alongside 1 pointing at
+recon and r4epis
+
+You might, where flattering, use "N years experience in/with" for things like
+R, package development, testing, CI.  It's always super hard to gauge
+experience but number of years can be a useful proxy.
+
+I think you might benefit like the last substantive paragraph in my cover
+letter (above) where you state your aim to become a full time RSE.
+
+---
+
+In your CV your title is postdoc but the first sentence of your cover letter
+lists you as an RSE.  I know that this is complicated to get right given one is
+official and one is practical but you need to square that circle somewhere.
+
+Current research rection should mention that you're working as an RSE, mention
+the recon and R4Epis projects by name.
+
+The collaborations section should include Recon as you are down as "Secretary,
+Software Development coordinator" - that's all stuff that should be in here!
+The reconlearn stuff should be more prominently arranged too.  The work you did
+on developing process recently there would be a good thing to highlight.
+
+The R4Epis section is too passive "developed code summaries to tailored to the
+expectations" - you gathered the expectations and iterated through with the MSF
+folks and that does not come through here - it sounds like you are working to
+an existing spec.  Similarly, "Developed contributed templates" becomes
+"Developed system for reviewing templates developed by [ROLEs], and worked with
+[WHOEVER] to review the templates" - even if this was just agreeing to stuff
+everything into a PR, you came up with a system and that is super relevant to
+this position.
+
+Conversely, it sounds like you ran the two described hackathons ("I have taken
+a leading role in the following...")
+
+In computational experience "My goal in software development isto ensure that
+my applications areopen, andaccessibleto researchers regardless ofcomputational
+skills" - mention testing and robustness.
