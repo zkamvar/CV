@@ -5,7 +5,7 @@ SHELL := bash
 .DELETE_ON_ERROR:
 .SUFFIXES:
 
-TARGET := ZNK_CV.pdf  #\
+TARGET := ZNK_CV.pdf ZNK_RESUME.pdf#\
 	ZNK_RESUME_Sci_Fri.pdf #\
 	ZNK_CV_UNL.pdf \
 	ZNK_RESUME_Mozilla.pdf

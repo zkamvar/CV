@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper,sans]{modernresume} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{resume} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{natbib}
+\usepackage{bibentry}
+\usepackage[scale=0.75, top = 0.75in, bottom = 0.75in]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand{\bibverse}[1]{\begin{verse} \bibentry{#1}. \end{verse} }
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Zhian} % Your first name
+\middlename{N.}
+\familyname{Kamvar, Ph. D.} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{ } % \title{Resum\'{e}}
+\address{406 Plant Sciences Hall}{Lincoln, NE, 68583-0722}
+\mobile{(541) 286-0187}
+% \phone{(541) 738-4074}
+\extrainfo{Twitter: \href{https://twitter.com/zkamvar}{@zkamvar}}
+\email{xxxxxxxxxx@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\vspace{5pt}
+
+I am a highly-motivated software engineer of several package for both
+population genetics/genomics and epidemiology in the R programming language. As
+a domain expert in computational biology, software engineer, and a science
+communicator, I have both the specialist and generalist skillset needed for
+efficient communication and collaboration between team members with diverse
+skill sets. My goal in software development is to ensure that my applications
+are \textbf{robust} and \textbf{accessible} to researchers regardless of
+computational skills. Above all, I aim to ensure my software is robust,
+consistent, and correct through \textit{test-driven developement} practices. 
+
+\section{Technical Skills}
+
+\cvitem{Languages}{Expert in R (\textbf{8 years})}
+\cvitem{}{Works in BASH and Linux (\textbf{10 years})}
+\cvitem{}{Performed analyses in Python (\textbf{8 years})}
+\cvitem{}{Wrote scientific software in C (\textbf{8 years})}
+\cvitem{}{Maintained reproducible workflows in Make (\textbf{2 years})}
+\cvitem{Developer Practices}{\textbf{7 years} \textit{collaborative} experience in Git and GitHub}
+\cvitem{Testing}{\textbf{6 years} experience designing \textbf{over 1000} unit tests for \textbf{5} R packages including verification, validation, and regression tests.}
+\cvitem{Issue Tracking}{Efficient in tracking issues with GitHub (\textbf{6 years} experience)}
+\cvitem{Bioinformatics}{Highlighted in the PeerJ \textbf{Top 10 Bioinformatics Papers of 2015}}
+\cvitem{}{Developed Makefile-based HTS variant discovery pipeline}
+\cvitem{Continuous Integration}{Highly experienced with Travis (\textbf{6 years}), Appveyor, and CircleCI}
+\cvitem{Customer Issues}{Have resolved \textbf{over 200 forum questions} in package-specific forums}
+
+\section{Selected Software Projects}
+
+\cvitemwithcomment{\href{https://grunwaldlab.github.io/poppr}{poppr}}{(\textit{R package with compiled code}) analysis of populations with mixed reproductive modes}{}
+\cvitemwithcomment{\href{https://github.com/zkamvar/read-processing}{read-processing}}{(\textit{Genomics pipeline}) Makefile-driven variant discovery from 55 \textit{Sclerotinia sclerotiorum} genomes}{}
+\cvitemwithcomment{\href{https://github.com/zkamvar/clonal-inference-simulations}{clonal-inference-simulations}}{(\textit{Analytical simulations in python, BASH, and R}) scripts for creating and analyzing agent-based population simulations}{}
+\cvitemwithcomment{\href{https://cran.r-project.org/package=adegenet}{adegenet}}{(\textit{R package with compiled code}) population genetic analysis}{}
+\cvitemwithcomment{\href{https://repidemicsconsortium.org/aweek}{aweek}}{(\textit{R package}) easy conversion between date and week formats}{}
+
+
+\section{Employment}
+
+\cventry{2018--Present}{Research Softare Engineer}{Imperial College London}{}{}{
+  Coordinator of Software Development, \textbf{}
+}
+
+\cventry{2017--2018}{Postdoctoral Researcher}{University of Nebraska-Lincoln}{}{}{
+  Population Genetics of the white mold pathogen \textit{Scleortinia sclerotiorum} (\textbf{4} publications, \textbf{2} first-author)
+}
+
+\cventry{2012--2016}{Graduate Research Assistant}{Oregon State University}{}{(Dissertation Research)}{
+	Development and Application of Tools for Genetic Analysis of Clonal Populations
+}
+
+\section{Qualifications}
+
+\cventry{2016}{Ph.D. Botany and Plant Pathology}{Oregon State University (OSU)}{Corvallis, OR}{Thesis: Development and Application of Tools for Analysis of Clonal Populations}{}  % Arguments not required can be left empty
+\cventry{2007}{B.S. Biology}{Truman State University (TSU)}{Kirksville, MO}{}{}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Selected Open Source Projects/Events}
+\cvitemwithcomment{Hackathons:}{\href{https://github.com/NESCent/r-popgen-hackathon/\#readme}{\#RPopHack (NESCent)}}{Improving the interoperability, scalability, and discoverability of population genetics packages in R}
+\cvitemwithcomment{}{\href{http://hackout3.ropensci.org/}{\#hackout3 (ROpenSci)}}{Creating open source tools for disease outbreak response}
+\cvitemwithcomment{Software:}{\href{https://github.com/grunwaldlab/poppr/\#readme}{poppr} (maintainer)}{R package for analysis of populations with mixed reproductive modes}
+\cvitemwithcomment{}{\href{https://github.com/thibautjombart/adegenet/\#readme}{adegenet} (contributor)}{R package for multivariate analysis of population genetics}
+\cvitemwithcomment{Education:}{\href{http://popgen.nescent.org}{http://popgen.nescent.org}}{Community-driven educational resource for population genetics in R}
+
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching}
+\cventry{2016}{\href{http://grunwaldlab.github.io/Reproducible-science-in-R/}{Reproducible Science R}}{Workshop}{APS}{}{}
+\cventry{Spring 2012}{Introductory Botany}{Botany and Plant Pathology Dept.}{OSU}{}{}
+\cventry{2014 \& 2015}{\href{http://grunwaldlab.github.io/Population_Genetics_in_R}{Population Genetics in R}}{Workshop}{OSU/APS}{}{}
+% \cventry{2012}{Introductory Biology}{Biology Dept.}{OSU}{}{}
+% \cventry{2008--2011}{English Instructor}{K--12}{Daegu}{South Korea}{}
+% \cventry{2006 \& 2007}{Cell Biology TA}{Biology Discipline}{TSU}{}{}
+
+%----------------------------------------------------------------------------------------
+%	OUTREACH SECTION
+%----------------------------------------------------------------------------------------
+% \section{Outreach and Service}
+
+% \cventry{2012--Present}{Active Contributor}{Bioinformatics Users Group}{OSU}{}{
+% 	Contributed presentations and discussions relevant to use of bioinformatics tools.
+% }
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP SECTION
+%----------------------------------------------------------------------------------------
+\section{Leadership/Organizing}
+
+\cventry{2015--2016}{Social Chair}{\href{http://cge6069.org/}{Coalition of Graduate Employees}}{labor union}{Corvallis, OR}{}
+\cventry{2012--2014}{Treasurer}{\href{http://gsa.bpp.oregonstate.edu/}{Graduate Student Association}}{Department of Botany and Plant Pathology}{OSU}{}
+
+\section{Creative Community Projects}
+
+\cventry{2012--2016}{\href{http://blogs.oregonstate.edu/inspiration/about-inspiration-dissemination/}{Inspiration Dissemination}}{radio program}{co-creator/host/producer}{}{Mission: Telling the stories about the lives and research of graduate students}
+\cventry{2009-03-14}{\href{https://crapartdaegu.wordpress.com/2009/02/20/statement-of-purpose-\%EC\%B7\%A8\%EC\%A7\%80-\%EC\%84\%B1\%EB\%AA\%85/}{Crap Art: Daegu}}{charity art show}{}{co-creator/organizer/participant}{Mission: Community-driven, process-based, spontaneous art creation}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+% \cvitem{2014}{OSU Botany and Plant Pathology Anita Summers Travel Award -- \$1000}
+\cvitem{2014}{Most Innovative [Radio] Program -- Intercollegiate Broadcasting System}
+% \cvitem{2013}{Seattle Institute For Statistical Genetics Travel Award -- \$450}
+\cvitem{2013--Present}{Graduate Student Travel Awards -- \$3100}
+\cvitem{2003--2006}{Truman State University Scholarships/Research Stipend -- \$5000}
+% \cvitem{2006}{Truman State University Summer Research Stipend -- \$3000}
+% \cvitem{2003}{Truman State University Presidential Leadership Scholarship -- \$2000}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+
+\end{document}
