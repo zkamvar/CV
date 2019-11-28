@@ -129,7 +129,7 @@
     colorlinks,
     urlcolor = blue,
     breaklinks,
-    baseurl       = http://,
+    baseurl       = https://,
     pdfborder     = 0 0 0,
     pdfpagemode   = UseNone,% do not show thumbnails or bookmarks on opening
     pdfstartpage  = 1,
@@ -138,7 +138,7 @@
     bookmarksopen = true,
     bookmarksdepth= 2,% to show sections and subsections
     pdfauthor     = {\@firstname{}~\@middlename{}~\@familyname{}},
-    pdftitle      = {\@firstname{}~\@middlename{}~\@familyname{} -- \@title{}},
+    pdftitle      = {\@firstname{}~\@middlename{}~\@familyname{} -- Resum\'{e}},
     pdfsubject    = {Resum\'{e} of \@firstname{}~\@middlename{}~\@familyname{}},
     pdfkeywords   = {\@firstname{}~\@middlename{}~\@familyname{}, curriculum vit\ae{}, resum\'{e}}}}
 
@@ -368,8 +368,8 @@
 % usage: \httplink[optional text]{link}
 \newcommand*{\httplink}[2][]{%
   \ifthenelse{\equal{#1}{}}%
-    {\href{http://#2}{#2}}%
-    {\href{http://#2}{#1}}}
+    {\href{https://#2}{#2}}%
+    {\href{https://#2}{#1}}}
 
 % makes an email hyperlink
 % usage: \emaillink[optional text]{link}

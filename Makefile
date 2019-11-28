@@ -5,13 +5,16 @@ SHELL := bash
 .DELETE_ON_ERROR:
 .SUFFIXES:
 
-TARGET := ZNK_CV.pdf  #\
-	ZNK_RESUME_Sci_Fri.pdf #\
-	ZNK_CV_UNL.pdf \
-	ZNK_RESUME_Mozilla.pdf
-TEX_FILES := $(patsubst %.pdf, %.tex, $(TARGET))
+# We only want to build the CV and Resume. 
+TARGET := ZNK_CV.pdf ZNK_RESUME.pdf ZNK_COVER.pdf
+
+# poorly obscured email
+EMAI := $(shell echo $$[0x358fc6] | tr 0-9 mavzrketsn)
+
+
+# Derivative files to remove
 TMP_FILES := $(patsubst %.pdf, %.tmp, $(TARGET))
-EMAI      := $(shell echo $$[0x358fc6] | tr 0-9 mavzrketsn)
+XDV_FILES := $(patsubst %.pdf, %.xdv, $(TARGET))
 
 .PHONY : all
 all: $(TARGET)
@@ -27,6 +30,7 @@ all: $(TARGET)
 .PHONY: clean
 clean:
 	$(RM) $(TMP_FILES)
+	$(RM) $(XDV_FILES)
 	latexmk -c
 	$(RM) -r $(shell biber --cache)
 
