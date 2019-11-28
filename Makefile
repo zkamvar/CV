@@ -6,7 +6,7 @@ SHELL := bash
 .SUFFIXES:
 
 # We only want to build the CV and Resume. 
-TARGET := ZNK_CV.pdf ZNK_RESUME.pdf
+TARGET := ZNK_CV.pdf ZNK_RESUME.pdf ZNK_COVER.pdf
 
 # poorly obscured email
 EMAI := $(shell echo $$[0x358fc6] | tr 0-9 mavzrketsn)
