@@ -24,11 +24,12 @@ all: $(TARGET)
 	sed "s/xxxxxxxxxx@/$(EMAI)@/" $< > $@
 
 # Step 2: The tmp files are fed into latexmk
-%.pdf: %.tmp tex/* *.sty
+%.pdf: %.tex tex/contact.tmp tex/* *.sty
 	latexmk -xelatex -quiet -r .latexmkrc $< $@
 
 .PHONY: clean
 clean:
+	$(RM) tex/contact.tmp
 	$(RM) $(TMP_FILES)
 	$(RM) $(XDV_FILES)
 	latexmk -c
