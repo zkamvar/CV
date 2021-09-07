@@ -25,7 +25,7 @@ all: $(TARGET)
 
 # Step 2: The tmp files are fed into latexmk
 %.pdf: %.tex tex/contact.tmp tex/* *.sty
-	latexmk -xelatex -quiet -r .latexmkrc $< $@
+	xelatex $< $@ > /dev/null
 
 .PHONY: clean
 clean:
